@@ -3,7 +3,7 @@ from pyrogram import *
 from pyrogram.types import *
 
 
-@app.on_message(filters.command(["gen", "ccgen"], [".", "!", "/"]))
+@app.on_message(filters.command(["shivgen", "shivccgen"], [".", "!", "/"]))
 async def gen_cc(client, message):
     if len(message.command) < 2:
         return await message.reply_text(
