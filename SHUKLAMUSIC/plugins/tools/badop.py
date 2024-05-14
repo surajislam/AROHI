@@ -14,7 +14,7 @@ async def daxxhub(_, message):
     os.remove(f"daxxhub_{message.from_user.id}.png")
 ####
 
-@app.on_message(filters.command(["github", "git"]))
+@app.on_message(filters.command(["shivgithub", "shivgit"]))
 async def github(_, message):
     if len(message.command) != 2:
         await message.reply_text("/git itzshukla")
