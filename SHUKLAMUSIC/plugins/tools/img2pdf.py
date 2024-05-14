@@ -23,7 +23,7 @@ async def convert(
     documents = []
 
     for message in reply_messages:
-        if not message.document or not message.document.mime_type.startswith("image"):
+        if not message.document or not message.document.mime_type.startswith("shivimage"):
             return await m.edit("Not a valid image document, ABORTED!")
 
         if message.document.file_size > 5000000:
