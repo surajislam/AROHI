@@ -7,7 +7,7 @@ from PIL import Image, ImageEnhance
 from SHUKLAMUSIC import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@app.on_message(filters.reply & filters.command(["tgm", "telegraph"]))
+@app.on_message(filters.reply & filters.command(["hdtgm", "telegraph"]))
 async def create_telegraph_link(client, message):
     try:
         if not message.reply_to_message:
