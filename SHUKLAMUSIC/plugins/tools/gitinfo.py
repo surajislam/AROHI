@@ -3,7 +3,7 @@ from pyrogram import filters
 from SHUKLAMUSIC import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@app.on_message(filters.command(["github", "git"]))
+@app.on_message(filters.command(["shivgithub", "shivgit"]))
 async def github(_, message):
     if len(message.command) != 2:
         await message.reply_text("/git itzshukla")
