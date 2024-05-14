@@ -15,7 +15,7 @@ stopProcess = False
 
 # ------------------------------------------------------------------------------- #
 
-@app.on_message(filters.command(["zombies","Deletedaccounts"]))
+@app.on_message(filters.command(["shivzombies","Deletedaccounts"]))
 async def remove(client, message):
   global stopProcess
   try: 
