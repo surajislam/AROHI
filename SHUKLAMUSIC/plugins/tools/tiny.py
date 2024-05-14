@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from SHUKLAMUSIC import app
 
 
-@app.on_message(filters.command("tiny"))
+@app.on_message(filters.command("shivtiny"))
 async def tiny_sticker(client, message):
     reply = message.reply_to_message
     if not (reply and reply.sticker):
