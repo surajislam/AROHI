@@ -23,7 +23,7 @@ button = InlineKeyboardMarkup(
 
 
 
-@app.on_message(filters.command("snehaxb")& admin_filter)
+@app.on_message(filters.command("ban")& admin_filter)
 async def ban(_, message):
     reply = message.reply_to_message
     chat_id = message.chat.id     
