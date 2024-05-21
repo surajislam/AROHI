@@ -12,7 +12,7 @@ from pyrogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineK
 # ------------------------------------------------------------------------------- #
 
 
-@app.on_message(filters.command("shivpin") & admin_filter)
+@app.on_message(filters.command("pin") & admin_filter)
 async def pin(_, message):
     replied = message.reply_to_message
     chat_title = message.chat.title
@@ -34,7 +34,7 @@ async def pin(_, message):
                 await message.reply_text(str(e))
 
 
-@app.on_message(filters.command("shivpinned"))
+@app.on_message(filters.command("pinned"))
 async def pinned(_, message):
     chat = await app.get_chat(message.chat.id)
     if not chat.pinned_message:
@@ -48,7 +48,7 @@ async def pinned(_, message):
 
 # ------------------------------------------------------------------------------- #
 
-@app.on_message(filters.command("shivunpin") & admin_filter)
+@app.on_message(filters.command("unpin") & admin_filter)
 async def unpin(_, message):
     replied = message.reply_to_message
     chat_title = message.chat.title
