@@ -4,7 +4,7 @@ from SHUKLAMUSIC import app
 from pyrogram import filters
 from pyrogram.types import InputMediaPhoto
 
-@app.on_message(filters.command(["shivimage"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]))
+@app.on_message(filters.command(["image"], prefixes=["/", "!", "%", ",", "", ".", "@", "#"]))
 async def pinterest(_, message):
      chat_id = message.chat.id
 
