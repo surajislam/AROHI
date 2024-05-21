@@ -6,13 +6,13 @@ from SHUKLAMUSIC import app as app
 from pyrogram.handlers import MessageHandler
 
 
-@app.on_message(filters.command("shivdice"))
+@app.on_message(filters.command("dice"))
 async def dice(bot, message):
     x=await bot.send_dice(message.chat.id)
     m=x.dice.value
     await message.reply_text(f"Hey {message.from_user.mention} your Score is : {m}",quote=True)
   
-@app.on_message(filters.command("shivdart"))
+@app.on_message(filters.command("dart"))
 async def dart(bot, message):
     x=await bot.send_dice(message.chat.id, "🎯")
     m=x.dice.value
