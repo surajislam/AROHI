@@ -13,10 +13,10 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "Itz_SapnaMusicbot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "Snehaxprobot")
 
 # Don't Add style font 
-BOT_NAME = getenv("BOT_NAME" , "˹ 𝗦ᴀᴘɴᴀ ✘ 𝗠ᴜsɪᴄ ˼")
+BOT_NAME = getenv("BOT_NAME" , "❥⍣⃝𝐒ɴᴇʜᴀⓍ≛⃝ 𝐃ᴇᴍᴏɴ🦋⃟❱‌ٖ")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -36,7 +36,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
     # Don't edit variables below this line #
-SUDO_USERS = [6762113050, 2047725696]
+SUDO_USERS = [2047725696]
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
