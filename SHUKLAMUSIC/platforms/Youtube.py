@@ -8,8 +8,8 @@ from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from SHUKLAMUSIC.utils.database import is_on_off
-from SHUKLAMUSIC.utils.formatters import time_to_seconds
+from VIPMUSIC.utils.database import is_on_off
+from VIPMUSIC.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):
@@ -243,7 +243,7 @@ class YouTubeAPI:
 
         def audio_dl():
             ydl_optssx = {
-                "format": "bestaudio/best",
+                "format": "bestaudio/[ext=m4a]",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
