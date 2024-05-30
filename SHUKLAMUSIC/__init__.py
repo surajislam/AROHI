@@ -1,4 +1,4 @@
-from SHUKLAMUSIC.core.bot import SHUKLA
+from SHUKLAMUSIC.core.bot import VIP
 from SHUKLAMUSIC.core.dir import dirr
 from SHUKLAMUSIC.core.git import git
 from SHUKLAMUSIC.core.userbot import Userbot
