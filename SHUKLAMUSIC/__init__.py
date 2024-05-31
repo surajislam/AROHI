@@ -1,4 +1,4 @@
-from SHUKLAMUSIC.core.bot import VIP
+from SHUKLAMUSIC.core.bot import SHUKLA
 from SHUKLAMUSIC.core.dir import dirr
 from SHUKLAMUSIC.core.git import git
 from SHUKLAMUSIC.core.userbot import Userbot
@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = VIP()
+app = SHUKLA()
 api = SafoneAPI()
 userbot = Userbot()
 
